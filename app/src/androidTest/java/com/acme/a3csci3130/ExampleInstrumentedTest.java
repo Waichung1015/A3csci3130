@@ -2,8 +2,9 @@ package com.acme.a3csci3130;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
-
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -16,11 +17,20 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+    @Rule
+    public ActivityTestRule<MainActivity> myact = new ActivityTestRule<MainActivity>(MainActivity.class);
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
         assertEquals("com.acme.a3csci3130", appContext.getPackageName());
     }
+    /*
+    @Test
+
+    public void enter(){
+        onView(withId(R.id.edittext)).perform(typeText("password"),closeSoftKeyboard());
+
+    }
+    */
 }

@@ -54,9 +54,10 @@ public class MainActivity extends Activity {
 
     public void createContactButton(View v)
     {
-        Intent intent=new Intent(this, CreateContactAcitivity.class);
+        Intent intent=new Intent(this, CreateContactActivity.class);
         startActivity(intent);
     }
+
 
     private void showDetailView(Contact person)
     {
@@ -64,7 +65,6 @@ public class MainActivity extends Activity {
         intent.putExtra("Contact", person);
         startActivity(intent);
     }
-
 
 
 }

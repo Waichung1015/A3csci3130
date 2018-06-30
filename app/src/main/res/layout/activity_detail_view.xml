@@ -6,23 +6,66 @@
     android:layout_height="match_parent"
     tools:context="com.acme.a3csci3130.DetailViewActivity">
     <EditText
+        android:id="@+id/businessNum"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:id="@+id/name"
-        android:hint = "Name"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
-        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="BusinessNum"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:hint="e-mail"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:hint="email"
+        android:layout_marginTop="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/businessType"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="Primmary business"
+        android:layout_marginTop="95dp"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_marginTop="135dp"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/province"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:hint="Province"
+        android:layout_marginTop="185dp"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp" />
@@ -31,9 +74,9 @@
         android:id="@+id/updateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="250dp"
         android:text="Update Data"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp"
@@ -44,8 +87,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Erase Contact"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/businessNum"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="8dp"
